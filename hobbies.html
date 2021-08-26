@@ -2,67 +2,13 @@
 <html>
     <head>
         <title> Hobbies </title>
+        <link rel = "stylesheet" href = "common-styles.css">
     </head>
 
     <style>
-        :root {
-            --body-colour: #F5E8C7;
-            --colour-1: #DEBA9D;
-            --colour-2: #9E7777;
-            --colour-3: #6F4C5B;
-        }
-        body {
-                background-color: var(--body-colour);
-                font-family: candara;
-                margin: 0px;
-                height: 70%;
-        }
-        h1 {
-            padding-top: 60px;
-            padding-left: 20px;
-            Font-size: 140px;
-            color: var(--colour-2);
-            background-color: var(--colour-1);
-            font-family: impact;
-            margin-left: 0px;
-            margin-right: 0px;
-            margin-bottom: -16px;
-        }
         h2 {
-            font-family: impact;
             text-align: center;
             padding-top: 40px;
-            color: var(--colour-3);
-        }
-        nav {
-            background-color: var(--colour-3);
-            position: fixed;
-            top: 0px;
-            left: 0px;
-            z-index: 1;
-            width: 100%;
-        }
-        nav ul {
-            margin: 0px 0px 0px 0px;
-            padding: 15px 0px 15px 40px;
-        }
-        nav ul li {
-            font-family: candara;
-            display: inline;
-            padding-left: 30px;
-            color: white;
-        }
-        footer {
-            padding: 15px 0px 0px 0px;
-            margin: 80px 0px 0px 0px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            background-color: var(--colour-3);
-        }
-        a {
-            color: inherit;
-            text-decoration: none;
         }
         p {
             background-color: var(--colour-2);
@@ -70,33 +16,6 @@
             margin: -30px 0px 20px 0px;
             color: white;
         }
-
-        .container {
-            width:70%;
-            margin-left: auto; 
-            margin-right: auto;
-            display:flex;
-            flex-direction: row;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .card{
-        background-color: var(--colour-1);
-        width: 200px;
-        height: 260px;
-        border: 1px solid var(--colour-2);
-        border-radius: 5px;
-        text-align: center;
-        font-family: candara;
-        box-shadow: 0 0 15px rgba(0,0,0,0.2);
-        margin: 20px;
-        }
-        .image-in-card{
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border: 2px dashed var(--colour-3);
-            border-radius: 50%;}
         .card:hover{
             transform: scale(1.2);
             }
@@ -161,7 +80,24 @@
             </div>
         </main>
         <footer>
-
+            <div class = "footer-item"> <img src = "email-logo-pink.png" class = "footer-logos" href = "#"> <br>
+                axatasutar@gmail.com 
+            </div>
+            <div class = "footer-item"> <img src = "phone-logo-pink.png" class = "footer-logos" href = "#"> <br> 
+                0764364214 
+            </div>
+            <div class = "footer-item"> 
+                <a href = "https://www.linkedin.com/in/akshatasutar95" target="_blank"><img src = "linkedin-logo-pink.png" class = "footer-logos"> </a> <br>
+                linkedin
+            </div>
+            <div class = "footer-item">
+                <a href = "https://github.com/Akshatasutar" target="_blank"> <img src = "git-logo-pink.png" class = "footer-logos"> </a><br> 
+                GitHub
+            </div>
+            <div class = "footer-item"> 
+                <a href = "https://leetcode.com/Akshatasutar" target="_blank"> <img src = "leetcode-logo-pink.png" class = "footer-logos"> </a> <br> 
+                LeetCode
+            </div>
         </footer>
     </body>
 </html>
