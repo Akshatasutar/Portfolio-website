@@ -1,0 +1,167 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <title> Hobbies </title>
+    </head>
+
+    <style>
+        :root {
+            --body-colour: #F5E8C7;
+            --colour-1: #DEBA9D;
+            --colour-2: #9E7777;
+            --colour-3: #6F4C5B;
+        }
+        body {
+                background-color: var(--body-colour);
+                font-family: candara;
+                margin: 0px;
+                height: 70%;
+        }
+        h1 {
+            padding-top: 60px;
+            padding-left: 20px;
+            Font-size: 140px;
+            color: var(--colour-2);
+            background-color: var(--colour-1);
+            font-family: impact;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: -16px;
+        }
+        h2 {
+            font-family: impact;
+            text-align: center;
+            padding-top: 40px;
+            color: var(--colour-3);
+        }
+        nav {
+            background-color: var(--colour-3);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+            width: 100%;
+        }
+        nav ul {
+            margin: 0px 0px 0px 0px;
+            padding: 15px 0px 15px 40px;
+        }
+        nav ul li {
+            font-family: candara;
+            display: inline;
+            padding-left: 30px;
+            color: white;
+        }
+        footer {
+            padding: 15px 0px 0px 0px;
+            margin: 80px 0px 0px 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: var(--colour-3);
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        p {
+            background-color: var(--colour-2);
+            padding: 20px 20px 20px 50vw;
+            margin: -30px 0px 20px 0px;
+            color: white;
+        }
+
+        .container {
+            width:70%;
+            margin-left: auto; 
+            margin-right: auto;
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .card{
+        background-color: var(--colour-1);
+        width: 200px;
+        height: 260px;
+        border: 1px solid var(--colour-2);
+        border-radius: 5px;
+        text-align: center;
+        font-family: candara;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        margin: 20px;
+        }
+        .image-in-card{
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 2px dashed var(--colour-3);
+            border-radius: 50%;}
+        .card:hover{
+            transform: scale(1.2);
+            }
+    </style>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li> <a href = "home.html"> Home </a></li>
+                    <li> <a href = "about-me.html"> About me </a></li>
+                    <li> <a href = "Architecture-projects.html"> Architecture projects </a></li>
+                    <li> <a href = "programming-projects.html"> Programming projects </a></li>
+                    <li> <a href = "#"> Hobbies </a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1> Hobbies </h1>
+            <p> My favourite and most consistent hobby is dancing. All forms and all styles. 
+                It never fails to lift my spirits and I am always trying to get better at it. 
+                Jazz is my go-to style, but I have had some practice with latin dances and hip-hop too. 
+                I am reluctantly sharing a <a href = "https://www.instagram.com/ak_underthespotlight/" target = "_blank">
+                <em><u>link to my instagram page</u></em></a>. 
+                The goal is to get good enough that I do not painfully cringe while watching myself. :) </p>
+            <h2>
+                Here is an ever-growing list of other activities I have dabbled in:
+            </h2>
+            <div class = "container">
+                <section class = "card";>
+                    <h3> Hoola  hooping <h3> 
+                    <img class = "image-in-card" src = "hoola.jpg" alt = "picture of me hoola-ing">
+                </section>
+                <section class = "card";>
+                    <strong><h3> 3-D pen <h3> </strong>
+                    <img class = "image-in-card" src = "3d-pen.jpg" alt = "Some 3d-pen art">
+                </section>
+                <section class = "card";>
+                    <strong><h3> Writing food articles <h3> </strong>
+                    <img class = "image-in-card" src = "food.jpg" alt = "Picture of food ingredients">
+                </section>
+                <section class = "card";>
+                    <strong><h3> Writing other articles <h3> </strong>
+                    <img class = "image-in-card" src = "blog.jpg" alt = "Picture of a blog">
+                </section>
+                <section class = "card";>
+                    <strong><h3> Being a speed rubick's cuber <h3> </strong>
+                    <img class = "image-in-card" src = "rubicks.jpg" alt = "A roobick's cube">
+                </section>
+                <section class = "card";>
+                    <strong><h3> Blender <h3> </strong>
+                    <img class = "image-in-card" src = "blender.jpg" alt = "A kitchen blender lol">
+                </section>
+                <section class = "card";>
+                    <strong><h3> Sketching <h3> </strong>
+                    <img class = "image-in-card" src = "sketching.jpg" alt = "Some pencil on paper art">
+                </section>
+                <section class = "card";>
+                    <strong><h3> Arduino smart garden <h3> </strong>
+                    <img class = "image-in-card" src = "garden.png" alt = "A diagram of an arduino with wires">
+                </section>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

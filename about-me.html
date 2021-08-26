@@ -1,0 +1,174 @@
+<!DOCTYPE Html>
+<html>
+<head>
+    <title> My portfolio</title>
+</head>
+
+<style>
+:root {
+    --body-colour: #F5E8C7;
+    --colour-1: #DEBA9D;
+    --colour-2: #9E7777;
+    --colour-3: #6F4C5B;
+    }
+body {
+    background-color: var(--body-colour);
+    font-family: candara;
+    margin: 0px;
+    height:70%;
+    }
+h1 {
+    padding-top: 60px;
+    padding-left: 20px;
+    Font-size: 140px;
+    color: var(--colour-2);
+    background-color: var(--colour-1);
+    font-family: impact;
+    margin: 0px 0px -16px 0px;
+    }
+h2 {
+    font-family: impact;
+    }
+nav {
+    background-color: var(--colour-3);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    width: 100%;
+    }
+nav ul {
+    margin: 0px 0px 0px 0px;
+    padding: 15px 0px 15px 40px;
+    }
+nav ul li {
+    font-family: candara;
+    display: inline;
+    padding-left: 30px;
+    color: white;
+    }
+footer {
+        padding: 15px 0px 0px 0px;
+        margin: 20px 0px 0px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: var(--colour-3);
+    }
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-item {
+                width: 170px;
+                height: 80px;
+                flex-shrink:1;
+                text-align: center;
+                color: var(--colour-3);
+            }
+.footer-item:hover {
+    color: white;
+    transform: scale(1.1);
+}
+.footer-logos {
+    margin: 6px auto 6px auto;
+    width: 50px;
+    height: auto;
+}
+
+#my-picture {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--colour-3);
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    top:-200px;
+    left: 15vw;
+}
+@media (max-width: 1160px) {
+    #my-picture {
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -40px;
+        width: 70%;
+        border-radius: 0px;
+    }
+}
+#about-me {
+    background-color: var(--colour-2);
+    border-color: var(--colour-3);
+    padding: 20px 20px 20px 50vw;
+    margin: -30px 0px 20px 0px;
+    color: white; 
+}
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href = "home.html"> Home </a></li>
+                <li> <a href = "#"> About me </a></li>
+                <li> <a href = "Architecture-projects.html"> Architecture projects </a></li>
+                <li> <a href = "#"> Programming projects </a></li>
+                <li> <a href = "hobbies.html"> Hobbies </a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1> About me </h1>
+        <div id = "about-me">
+            <p>
+                I am Akshata Sutar, currently a third-year student of Computer Science,
+                specialization in IoT at Kristianstad University, Sweden.
+                </p>
+                <p>
+                Sometime in 2018, I took an online programming course in Python,
+                which resulted in me falling in love with the art of problem solving and
+                coding, and subsequently deciding to change my career from
+                Architecture to computer science. Computer Science is the main focus of my career for now. 
+                </p>
+                <p>
+                I will always be grateful to architecture school for teaching me the fundamentals of good design, 
+                to learn from criticism, to gracefully accept rejection, and kindling in me a love for model making.
+                But I discovered quite early on that architecture was not the career for me, and 
+                computer science seems more aligned to my interests and who I am as a person. 
+                </p>
+                <p>
+                I don't believe people can be reduced to one characteristic, but if I had to do that for me,
+                I would say I am curious and filled with wonder. You can often hear me say excitedly,
+                "Ah! That's so COOL. I did not know that." This awareness that I will always be a beginner 
+                at whatever I do makes me more open to learn new things. I truly believe there is no end 
+                to learning. 
+                </p>
+        </div>
+        
+        <img id = "my-picture" src = "me-pic.jpg" alt = "A picture of me">
+    </main>
+    
+    <footer>
+        <div class = "footer-item"> <img src = "email-logo-pink.png" class = "footer-logos" href = "#"> <br>
+            axatasutar@gmail.com 
+        </div>
+        <div class = "footer-item"> <img src = "phone-logo-pink.png" class = "footer-logos" href = "#"> <br> 
+            0764364214 
+        </div>
+        <div class = "footer-item"> 
+            <a href = "https://www.linkedin.com/in/akshatasutar95" target="_blank"><img src = "linkedin-logo-pink.png" class = "footer-logos"> </a> <br>
+        </div>
+        <div class = "footer-item"> 
+            <a href = "https://github.com/Akshatasutar" target="_blank"> <img src = "git-logo-pink.png" class = "footer-logos"> </a><br> 
+        </div>
+        <div class = "footer-item"> 
+            <a href = "https://leetcode.com/Akshatasutar" target="_blank"> <img src = "leetcode-logo-pink.png" class = "footer-logos"> </a> <br> 
+        </div>
+    </footer>
+</body>
+</html>

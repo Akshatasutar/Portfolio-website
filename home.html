@@ -1,0 +1,151 @@
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title> Portfolio Home </title>
+    </head>
+
+    <style>
+        :root {
+            --body-colour: #F5E8C7;
+            --colour-1: #DEBA9D;
+            --colour-2: #9E7777;
+            --colour-3: #6F4C5B;
+        }
+        body {
+            background-color: var(--colour-3);
+            font-family: candara;
+            margin: 0px;
+            height: fit-content;
+        }
+        h1 {
+            font-size: 10vw;
+            font-family: impact;
+            color: var(--colour-2);
+            margin: 10px 10px 0px 10px;
+        }
+        footer {
+            padding: 10px;
+            margin: 80px 0px 0px 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: var(--colour-3);
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        
+        .go-to {
+            width: 100%;
+            height: 60%;
+            font-size: 5vw;
+            font-family: impact;
+            color: var(--body-colour);
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 50px;
+        }
+        .go-to-group-1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-end;
+            width: 50%;
+            padding-right: 30px;
+            background-color: var(--colour-1);
+        }
+        .go-to-group-2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: start;
+            width: 50%;
+            padding-left: 30px;
+            background-color: var(--colour-2);
+        }
+        .go-text {
+            width: fit-content;
+            margin-top: 20px;
+        }
+        .go-text-2 {  
+            width: fit-content;
+            color: var(--colour-3);
+        }
+        .go-text:hover {
+            transform: scale(1.2);
+            color: white;
+        }
+        .go-text-2:hover {
+            transform: scale(1.2);
+            color: #4c343e;
+        }
+        .footer-item {
+            width: 170px;
+            height: 80px;
+            /*
+            height: 15vw;
+            background-color: black;
+            border: solid 5px white;*/
+            flex-shrink:1;
+            text-align: center;
+            color: var(--colour-3);
+            font-size: 1.1vw;
+        }
+        @media (max-width: 1400px) {
+            .footer-item {
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 1000px) {
+            .footer-item {
+                font-size: 12px;
+            }
+        }
+        .footer-item:hover {
+            color: white;
+            transform: scale(1.1);
+        }
+        .footer-logos {
+            margin: 6px auto 6px auto;
+            width: 50px;
+            height: auto;
+        }       
+    </style>
+
+    <body>
+        <main>
+            <h1> Akshata Sutar </h1>
+            <div class = "go-to">
+                <section class = "go-to-group-1">
+                    <div class = "go-text-2"> <a href = "about-me.html"> About me </a></div>
+                    <div class = "go-text-2"> <a href = "hobbies.html"> Hobbies </a></div>
+                </section>
+                <section class = "go-to-group-2">
+                    <div class = "go-text"> <a href = "programming-projects.html"> Programming <br>projects </a> </div>
+                    <div class = "go-text"> <a href = "Architecture-projects.html"> Architecture <br>projects </a></div>
+                </section>
+            </div>
+
+        </main>
+
+        <footer>
+            <div class = "footer-item"> <img src = "email-logo-pink.png" class = "footer-logos" href = "#"> <br>
+                axatasutar@gmail.com 
+            </div>
+            <div class = "footer-item"> <img src = "phone-logo-pink.png" class = "footer-logos" href = "#"> <br> 
+                0764364214 
+            </div>
+            <div class = "footer-item"> 
+                <a href = "https://www.linkedin.com/in/akshatasutar95" target="_blank"><img src = "linkedin-logo-pink.png" class = "footer-logos"> </a> <br>
+            </div>
+            <div class = "footer-item"> 
+                <a href = "https://github.com/Akshatasutar" target="_blank"> <img src = "git-logo-pink.png" class = "footer-logos"> </a><br> 
+            </div>
+            <div class = "footer-item"> 
+                <a href = "https://leetcode.com/Akshatasutar" target="_blank"> <img src = "leetcode-logo-pink.png" class = "footer-logos"> </a> <br> 
+            </div>
+        </footer>
+    </body>
+</html>
